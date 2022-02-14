@@ -103,6 +103,8 @@ L.VectorGrid.Protobuf = L.VectorGrid.extend({
 	},
 
 	_getVectorTilePromise: function(coords, tileBounds) {
+		console.log('FOOBAR');
+		console.log(tileBounds);
 		var data = {
 			s: this._getSubdomain(coords),
 			x: coords.x,
